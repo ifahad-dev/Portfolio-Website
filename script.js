@@ -37,3 +37,13 @@ function topFunction() {
 window.onload = function () {
     alert("Welcome to ifahad-dev's Portfolio");
 };
+let title = document.getElementById("mainTitle");
+
+title.style.color = "#2563eb";
+
+title.innerHTML = "Fahad Ibrahim | Web Developer";
+
+function changeTitle() {
+    document.getElementById("mainTitle").innerHTML =
+        "Future Full Stack Developer";
+}
