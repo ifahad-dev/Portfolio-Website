@@ -87,6 +87,9 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width:100%;
 }
+nav ul li a:hover{
+    color: var(--color-accent);
+}
 
 /* =========================
    HERO SECTION
@@ -96,6 +99,8 @@ nav ul li a:hover::after{
     width:100%;
     max-width:900px;
     padding:80px 60px;
+
+    animation: fadeInUp 1s ease;
 }
 
 #hero h1{
@@ -167,6 +172,7 @@ nav ul li a:hover::after{
     font-weight:bold;
     box-shadow:var(--shadow-sm);
     transition:var(--transition-fast);
+    animation: fadeInUp 1s ease;
 }
 
 .skill:hover{
@@ -204,6 +210,7 @@ nav ul li a:hover::after{
     border-radius:12px;
     box-shadow:var(--shadow-md);
     transition:var(--transition-slow);
+    animation: fadeInUp 1s ease;
 }
 
 .project-card:hover{
@@ -402,4 +409,15 @@ button:hover,
 #contactForm textarea{
     min-height:120px;
     resize:vertical;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
