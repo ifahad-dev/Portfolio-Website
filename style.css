@@ -369,3 +369,17 @@ button:hover,
         justify-content:center;
     }
 }
+#resume{
+    padding:60px;
+    background:#ffffff;
+}
+
+#resume h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+#resume p{
+    font-size:20px;
+    margin-bottom:20px;
+}
